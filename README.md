@@ -17,7 +17,7 @@ Pokedex made w/ Angular 8
 
 - Wait until compiling is done.
 
-- Open a new tab in your browser and access to the app by reaching : http://localhost:4200/
+- Open a new tab in your browser and access to the app with : http://localhost:4200/
 
 - ENJOY !
 
