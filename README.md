@@ -1,23 +1,25 @@
 # Angular-Pokedex-Final-Release.
 Pokedex made w/ Angular 8
 
-1. Get it and extract :
+1. Download / Clone :
 
-a. Clone the repository on you local environment using the command: git clone https://github.com/Yohann-Moy/Angular-Pokedex
+- Clone the repository on you local environment using the command: git clone https://github.com/Yohann-Moy/Angular-Pokedex-Final-Release
 
-b. Inside the "pokedex" folder, right click on the "node_modules" archive and select "extract it to node_modules\".
+⚠️ Don't pay attention to the files that could not be created. ⚠️
 
 2. Run the app.
 
-a. Go back to the root of the github clone.
+- Reach the cloned repository, then inside the "fake_back-end" folder, open a terminal and execute the command : json-server --watch db.json.
 
-b. Inside the "fake_back-end" folder, open a terminal and execute the command : json-server --watch db.json
+- Go back to the root of the cloned repository.
 
-c. Inside the "pokedex" folder, open a terminal and execute the command : npm start
+- Inside the "pokedex" folder, open a terminal and execute the command : npm start
 
-d. Open a new tab in your browser and access to http://localhost:4200/
+- Wait until compiling is done.
 
-e. ENJOY!
+- Open a new tab in your browser and access to the app by reaching : http://localhost:4200/
+
+- ENJOY !
 
 //
 
