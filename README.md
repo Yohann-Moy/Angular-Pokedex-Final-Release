@@ -23,5 +23,5 @@ Pokedex made w/ Angular 8
 
 //
 
-If anything goes wrong (project not running properly or "node_modules.zip" missing), please download the project from my Google drive following : 
+If anything goes wrong (project not running properly or missing files), please download the project from my Google drive following : 
 ...
