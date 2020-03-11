@@ -1,0 +1,17 @@
+.mat-card-header-text{
+  display:none;
+}
+
+mat-card-header .mat-card-title{//display:none
+}
+
+#pokemon_cards_container{
+  text-align:center;
+}
+
+.each_pokemon_card{
+  width: 15%;
+  min-width: 250px;
+  display: inline-block;
+  margin: 0 1rem 0 0;
+}

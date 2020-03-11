@@ -1,0 +1,38 @@
+
+<h2>Ajouter un pokemon</h2>
+<form [formGroup]="pokemonForm" (ngSubmit)="onSubmit()">
+  
+  <label>Pokedex ID:</label>
+  <input type="number" min="1" max="100" formControlName="dexid"> 
+
+  <label>Nom:</label>
+  <input type="text" formControlName="nom">
+
+  <label>Poids:</label>
+  <input type="text" formControlName="poids">
+
+  <label>Taille:</label>
+  <input type="text" formControlName="taille">
+
+  <label>Type 1:</label>
+  <select name="type1" formControlName="type1">
+    <option>Plante</option>
+    <option>Poison</option>
+    <option>Lol</option>
+    <option>Mdr</option>
+  </select>
+
+  <label>Type 2:</label>
+  <select name="type2" formControlName="type2">
+    <option value="Plante">Plante</option>
+    <option value="Poison">Poison</option>
+    <option value="Electrik">Electrik</option>
+    <option value="Feu">Feu</option>
+  </select>
+
+  <label>Sprite:</label>
+  <input type="text" formControlName="sprite">
+
+  <button type="submit" [disabled] = "!pokemonForm.valid">Submit</button>
+
+</form>

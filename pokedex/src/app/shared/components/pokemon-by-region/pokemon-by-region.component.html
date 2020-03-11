@@ -1,0 +1,46 @@
+<h2>Pokemons de {{regionName}}</h2>
+
+<div id='pokemon_cards_container'>
+    <div *ngFor="let pkmn of pokemonList" class="each_pokemon_card">
+      <mat-card class="pokemon-card">
+          <mat-card-header>
+            <mat-card-title>{{pkmn.nom}}</mat-card-title>
+            <mat-card-subtitle>Pokemon N°{{pkmn.dexid}}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/{{pkmn.sprite}}" style="width:150px;" alt="Photo de {{pkmn.nom}}">
+          <mat-card-content>
+            <p>Type 1: {{pkmn.type1}}</p>
+            <p>Type 2: {{pkmn.type2}}</p>
+            <!-- <a [routerLink]="['/pokemon', pkmn.nom]">Afficher +</a> -->
+          </mat-card-content>
+          </mat-card>
+    </div>
+  </div>
+  <div class='return_possibility_footer'></div>
+
+  <div class='retour'>
+    <a routerLink="/regions">← Retour</a>
+  </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

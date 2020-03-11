@@ -1,0 +1,8 @@
+<app-pokedex-toolbar></app-pokedex-toolbar>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened><app-pokedex-menu></app-pokedex-menu></mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet> <!-- Section à partir duquel la page devient dynamique -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

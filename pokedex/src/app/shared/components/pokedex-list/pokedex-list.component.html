@@ -1,0 +1,18 @@
+<h2>Choisissez une région :</h2>
+
+<div id='region_cards_container'>
+    <div *ngFor="let reg of regionList" class="each_region_card">
+    <a [routerLink]="['/region', reg.nom]">
+      <mat-card class="region-card">
+          <mat-card-header>
+            <mat-card-title>{{reg.nom}}</mat-card-title>
+            <mat-card-subtitle>Generation N°0{{reg.id}}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <img class='normal_region'src="assets/img/{{reg.image}}.jpg"/>
+            <img class='alternative_region_img' src="assets/img/{{reg.image}}_alt.jpg"/>
+          </mat-card-content>
+          </mat-card>
+        </a>
+    </div>
+  </div>

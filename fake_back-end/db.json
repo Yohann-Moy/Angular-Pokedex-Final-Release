@@ -1,0 +1,326 @@
+{
+  "pages": [
+    {
+      "id": 1,
+      "nom": "accueil",
+      "option": "carrousel",
+      "texte": "<p>Bonjour à tous c'est David Lafarge Pokemon</p>"
+    }
+  ],
+  "regions": [
+    {
+      "id": 1,
+      "nom": "Kanto",
+      "image": "kanto_img"
+    },
+    {
+      "id": 2,
+      "nom": "Johto",
+      "image": "johto_img"
+    },
+    {
+      "id": 3,
+      "nom": "Hoenn",
+      "image": "hoenn_img"
+    }
+  ],
+  "pokemons": [
+    {
+      "dexid": 1,
+      "nom": "Bulbizarre",
+      "poids": "1.52",
+      "taille": "0.54",
+      "type1": "Plante",
+      "type2": "Poison",
+      "sprite": "001.png",
+      "region": "Kanto",
+      "id": 4
+    },
+    {
+      "dexid": 2,
+      "nom": "Herbizarre",
+      "poids": "7.9",
+      "taille": "1.34",
+      "type1": "Plante",
+      "type2": "Poison",
+      "region": "Kanto",
+      "id": 5,
+      "sprite": "002.png"
+    },
+    {
+      "dexid": 3,
+      "nom": "Florizarre",
+      "poids": "30.2",
+      "taille": "2.41",
+      "type1": "Plante",
+      "type2": "Poison",
+      "sprite": "003.png",
+      "region": "Kanto",
+      "id": 7
+    },
+    {
+      "dexid": 4,
+      "nom": "Salamèche",
+      "poids": "2.1",
+      "taille": "0.25",
+      "type1": "Feu",
+      "type2": "Feu",
+      "sprite": "004.png",
+      "region": "Kanto",
+      "id": 8
+    },
+    {
+      "dexid": 5,
+      "nom": "Reptincel",
+      "poids": "3.45",
+      "taille": "0.87",
+      "type1": "Plante",
+      "type2": "Feu",
+      "region": "Kanto",
+      "sprite": "005.png",
+      "id": 10
+    },
+    {
+      "dexid": 6,
+      "nom": "Dracaufeu",
+      "poids": 42.5,
+      "taille": 2.3,
+      "type1": "Feu",
+      "type2": "Feu",
+      "region": "Kanto",
+      "sprite": "006.png",
+      "id": 11
+    },
+    {
+      "dexid": 7,
+      "nom": "Carapuce",
+      "poids": 0.45,
+      "taille": 0.31,
+      "type1": "Eau",
+      "type2": "Eau",
+      "region": "Kanto",
+      "sprite": "007.png",
+      "id": 12
+    },
+    {
+      "dexid": 8,
+      "nom": "Carabaffe",
+      "poids": 22.5,
+      "taille": 1,
+      "type1": "Eau",
+      "type2": "/",
+      "region": "Kanto",
+      "sprite": "008.png",
+      "id": 13
+    },
+    {
+      "dexid": 9,
+      "nom": "Tortank",
+      "poids": 85.6,
+      "taille": 1.5,
+      "type1": "Eau",
+      "type2": "/",
+      "region": "Kanto",
+      "sprite": "009.png",
+      "id": 14
+    },
+    {
+      "dexid": 152,
+      "nom": "Germignon",
+      "poids": 0.9,
+      "taille": 6.4,
+      "type1": "Plante",
+      "type2": "/",
+      "region": "Johto",
+      "sprite": "152.png",
+      "id": 15
+    },
+    {
+      "dexid": 153,
+      "nom": "Macronium",
+      "poids": 15.8,
+      "taille": 1.2,
+      "type1": "Plante",
+      "type2": "/",
+      "region": "Johto",
+      "sprite": "153.png",
+      "id": 16
+    },
+    {
+      "dexid": 154,
+      "nom": "Meganium",
+      "poids": 100.5,
+      "taille": 1.8,
+      "type1": "Plante",
+      "type2": "/",
+      "region": "Johto",
+      "sprite": "154.png",
+      "id": 17
+    },
+    {
+      "dexid": 155,
+      "nom": "Hericendre",
+      "poids": 7.9,
+      "taille": 0.5,
+      "type1": "Feu",
+      "type2": "/",
+      "region": "Johto",
+      "sprite": "155.png",
+      "id": 18
+    },
+    {
+      "dexid": 156,
+      "nom": "Feurisson",
+      "poids": 19,
+      "taille": 0.9,
+      "type1": "Feu",
+      "type2": "/",
+      "region": "Johto",
+      "sprite": "156.png",
+      "id": 19
+    },
+    {
+      "dexid": 157,
+      "nom": "Typhlosion",
+      "poids": 79.5,
+      "taille": 1.7,
+      "type1": "Feu",
+      "type2": "/",
+      "region": "Johto",
+      "sprite": "157.png",
+      "id": 20
+    },
+    {
+      "dexid": 158,
+      "nom": "Kaiminus",
+      "poids": 9.5,
+      "taille": 0.6,
+      "type1": "Eau",
+      "type2": "/",
+      "region": "Johto",
+      "sprite": "158.png",
+      "id": 21
+    },
+    {
+      "dexid": 159,
+      "nom": "Crocrodil",
+      "poids": 25,
+      "taille": 1.1,
+      "type1": "Eau",
+      "type2": "/",
+      "region": "Johto",
+      "sprite": "159.png",
+      "id": 22
+    },
+    {
+      "dexid": 160,
+      "nom": "Aligatueur",
+      "poids": 88.8,
+      "taille": 2.3,
+      "type1": "Eau",
+      "type2": "/",
+      "region": "Johto",
+      "sprite": "160.png",
+      "id": 23
+    },
+    {
+      "dexid": 252,
+      "nom": "Arcko",
+      "poids": 5,
+      "taille": 0.5,
+      "type1": "Plante",
+      "type2": "/",
+      "region": "Hoenn",
+      "sprite": "252.png",
+      "id": 24
+    },
+    {
+      "dexid": 253,
+      "nom": "Massko",
+      "poids": 21.6,
+      "taille": 0.9,
+      "type1": "Plante",
+      "type2": "/",
+      "region": "Hoenn",
+      "sprite": "253.png",
+      "id": 25
+    },
+    {
+      "dexid": 254,
+      "nom": "Jungko",
+      "poids": 55.2,
+      "taille": 1.7,
+      "type1": "Plante",
+      "type2": "/",
+      "region": "Hoenn",
+      "sprite": "254.png",
+      "id": 26
+    },
+    {
+      "dexid": 255,
+      "nom": "Poussifeu",
+      "poids": 2.5,
+      "taille": 0.4,
+      "type1": "Feu",
+      "type2": "/",
+      "region": "Hoenn",
+      "sprite": "255.png",
+      "id": 27
+    },
+    {
+      "dexid": 256,
+      "nom": "Galifeu",
+      "poids": 19.5,
+      "taille": 0.9,
+      "type1": "Feu",
+      "type2": "/",
+      "region": "Hoenn",
+      "sprite": "256.png",
+      "id": 28
+    },
+    {
+      "dexid": 257,
+      "nom": "Brasegali",
+      "poids": 52,
+      "taille": 1.9,
+      "type1": "Feu",
+      "type2": "/",
+      "region": "Hoenn",
+      "sprite": "257.png",
+      "id": 29
+    },
+    {
+      "dexid": 258,
+      "nom": "Gobou",
+      "poids": 7.6,
+      "taille": 0.4,
+      "type1": "Eau",
+      "type2": "/",
+      "region": "Hoenn",
+      "sprite": "258.png",
+      "id": 30
+    },
+    {
+      "dexid": 259,
+      "nom": "Flobio",
+      "poids": 28,
+      "taille": 0.7,
+      "type1": "Eau",
+      "type2": "/",
+      "region": "Hoenn",
+      "sprite": "259.png",
+      "id": 31
+    },
+    {
+      "dexid": 260,
+      "nom": "Laggron",
+      "poids": 81.9,
+      "taille": 1.6,
+      "type1": "Eau",
+      "type2": "/",
+      "region": "Hoenn",
+      "sprite": "260.png",
+      "id": 32
+    }
+  ]
+}

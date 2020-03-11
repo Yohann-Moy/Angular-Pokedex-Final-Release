@@ -1,0 +1,109 @@
+<div *ngFor="let pkmn of pokemonList">
+    <h2>Vous avez choisi d'éditer {{pkmn.nom}}</h2>
+    <div class='global_edition_page_container'>
+        <div class='edit-pokemon-page-container'>
+             <form class='edit-pokemon-form' [formGroup]="pokemonForm" (ngSubmit)="onPatch(pkmn.id)">
+
+                <label>Pokedex ID:</label>
+                <input type="number" min="1" max="100" placeholder ='{{pkmn.dexid}} (initial)' value ='{{pkmn.dexid}} (initial)'class='add-pokemon-input' formControlName="dexid"> 
+
+                <label>Nom:</label>
+                <input type="text"  value='{{pkmn.nom}}' class='add-pokemon-input' formControlName="nom">
+
+                <label>Region:</label>
+                <select name="region" class='add-pokemon-input' formControlName="region" >
+                <option value="{{pkmn.region}}">{{pkmn.region}} (initial)</option>
+                <option value="Kanto">Kanto</option>
+                <option value="Johto">Johto</option>
+                <option value="Hoenn">Hoenn</option>
+                </select>
+
+                <label>Poids:</label>
+                <input type="number" value="{{pkmn.poids}}" class='add-pokemon-input' formControlName="poids">
+
+                <label>Taille:</label>
+                <input type="number" value="{{pkmn.taille}}" class='add-pokemon-input' formControlName="taille">
+
+                <label>Type 1:</label>
+                <select name="type1" class='add-pokemon-input-25' formControlName="type1">
+                <option value="{{pkmn.type1}}">{{pkmn.type1}} (inital)</option>
+                <option value="Normal">Normal</option>
+                <option value="Feu">Feu</option>
+                <option value="Eau">Eau</option>
+                <option value="Electrik">Electrik</option>
+                <option value="Plante">Plante</option>
+                <option value="Glace">Glace</option>
+                <option value="Combat">Combat</option>
+                <option value="Poison">Poison</option>
+                <option value="Sol">Sol</option>
+                <option value="Vol">Vol</option>
+                <option value="Psy">Psy</option>
+                <option value="Insecte">Insecte</option>
+                <option value="Roche">Roche</option>
+                <option value="Spectre">Spectre</option>
+                <option value="Dragon">Dragon</option>
+                <option value="Fée">Fée</option>
+                </select>
+                <br>
+
+                <label>Type 2:</label>
+                <select name="type2" class='add-pokemon-input-25' formControlName="type2">
+                    <option value="/">Pas de 2nd type</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Feu">Feu</option>
+                    <option value="Eau">Eau</option>
+                    <option value="Electrik">Electrik</option>
+                    <option value="Plante">Plante</option>
+                    <option value="Glace">Glace</option>
+                    <option value="Combat">Combat</option>
+                    <option value="Poison">Poison</option>
+                    <option value="Sol">Sol</option>
+                    <option value="Vol">Vol</option>
+                    <option value="Psy">Psy</option>
+                    <option value="Insecte">Insecte</option>
+                    <option value="Roche">Roche</option>
+                    <option value="Spectre">Spectre</option>
+                    <option value="Dragon">Dragon</option>
+                    <option value="Fée">Fée</option>
+                </select>
+
+                <br>
+
+                <label>Sprite:</label>
+                <input type="text" value="{{pkmn.sprite}}" class='add-pokemon-input' formControlName="sprite">
+
+                <div class='submit-button' style="border-top:none;">
+                    <button type="submit" [disabled] = "!pokemonForm.valid" class="submit">Modifier</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class='edit-pokemon-page-container' id='arrow'>
+            <h4>-></h4>
+        </div>
+
+        <div class='edit-pokemon-page-container'>
+            <div id='pokemon_cards_container_edition'>
+                <div class="pokemon_card_edition">
+                <mat-card class="pokemon-card_edition">
+                    <mat-card-header>
+                        <mat-card-title>{{pkmn.nom}}</mat-card-title>
+                        <mat-card-subtitle>Pokemon N°{{pkmn.dexid}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/{{pkmn.sprite}}" style="width:150px;" alt="Photo de {{pkmn.nom}}">
+                    <mat-card-content>
+                        <p>Type 1: {{pkmn.type1}}</p>
+                        <p>Type 2: {{pkmn.type2}}</p>
+                    </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='return_possibility_footer'></div>
+    <div class='retour'>
+        <a routerLink="/pokemons">← Retour</a>
+    </div>
+</div>
+

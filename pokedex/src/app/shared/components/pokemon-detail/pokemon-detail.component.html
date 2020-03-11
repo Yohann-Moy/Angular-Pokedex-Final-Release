@@ -1,0 +1,21 @@
+<h2>Informations sur {{pokemonName}}</h2>
+
+    <div id='pokemon_cards_container'>
+        <div *ngFor="let pokemon of pokemonList" class="each_pokemon_card">
+          <mat-card class="pokemon-card">
+              <mat-card-header>
+                <mat-card-title>{{pokemon.nom}}</mat-card-title>
+                <mat-card-subtitle>Pokemon N°{{pokemon.dexid}}</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/{{pokemon.sprite}}" style="width:150px;" alt="Photo de {{pokemon.nom}}">
+              <mat-card-content>
+                <p>Poids: {{pokemon.poids}} KG</p>
+                <p>Taille: {{pokemon.taille}} M</p>
+                <p>Type 1: {{pokemon.type1}}</p>
+                <p>Type 2: {{pokemon.type2}}</p>
+              </mat-card-content>
+              </mat-card>
+        </div>
+      </div>
+
+      <a routerLink="/pokemons">← Retour</a>
