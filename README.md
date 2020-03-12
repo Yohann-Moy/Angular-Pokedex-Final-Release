@@ -9,6 +9,10 @@ Pokedex made w/ Angular 8
 
 2. Run the app.
 
+- Get sure "Node" is installed on your environment otherwise download it following : https://nodejs.org/
+- Get sure "Npm" is istalled on your environment otherwise open a terminal and execute the command : npm install npm@latest -g
+- Get sure "Json Server" is installed on your environment otherwise open a terminal and execute the command : npm install -g json-server
+
 - Reach the cloned repository, then inside the "fake_back-end" folder, open a terminal and execute the command : json-server --watch db.json.
 
 - Go back to the root of the cloned repository.
